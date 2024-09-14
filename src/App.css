@@ -89,3 +89,17 @@ button {
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
+
+@media (max-width:1080px) {
+  .main{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #points{
+    margin: 10px auto;
+  }
+  .grid{
+    padding: 1rem
+  }
+}
