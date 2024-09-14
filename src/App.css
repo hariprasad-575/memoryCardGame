@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #101010;
+  /* text-align: center; */
+  /* font-size: 1.5em; */
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+#particles canvas {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+
+}
+.main{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */  
+}
+.instructions{
+  padding: 2rem;
+  ul{
+    padding-left: 0;
+    list-style: none;
+    line-height: 3rem;
+  }
+}
+button {
+  background-color: rebeccapurple;
+  padding: 10px 30px;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#points{
+  background-color: #993333;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.grid {
+  max-width: 600px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
